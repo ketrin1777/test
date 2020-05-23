@@ -37,6 +37,7 @@ if (isset($_POST['delete_submit'])) {
 // Read
 
 $sql = $pdo->prepare("SELECT * FROM `user`");
+
 $sql->execute();
 $result = $sql->fetchAll();
 
